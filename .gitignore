@@ -21,3 +21,30 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+
+# Filament temporary or cached files
+/public/vendor/filament
+/storage/framework/sessions
+/storage/framework/cache
+/storage/framework/views
+
+# Laravel IDE Helper (optional)
+_ide_helper.php
+_ide_helper_models.php
+/.phpstorm.meta.php
+
+# Logs
+/storage/logs
+
+# Compiled classes and packages
+/bootstrap/cache
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# Environment-specific files
+.env.*.backup
+
