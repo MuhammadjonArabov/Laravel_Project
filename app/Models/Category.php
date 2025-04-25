@@ -8,5 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     /** @use HasFactory<\Database\Factories\CategoryFactory> */
-    use HasFactory;
+    use HasFactory, HasTranslations;
+
+    protected $fillable = ['name', 'icon'];
+
+    public array $translatable = ['name'];
+
+    public function products(): HasMany
+    {
+        return $this->hasMany(Product::class);
+    }
+
 }

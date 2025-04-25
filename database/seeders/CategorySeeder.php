@@ -12,6 +12,29 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Category::create([
+            "name"=>[
+                "uz"=>"Stol",
+                "ru"=>"Стол"
+            ],
+        ]);
+
+        Category::create([
+            "name"=>[
+                "uz"=>"Divan",
+                "ru"=>"Диван"
+            ],
+        ]);
+
+        Category::create([
+            "name"=>[
+                "uz"=>"Kreslo",
+                "ru"=>"Кресло"
+            ],
+        ]);
+
+
+
+
     }
 }
